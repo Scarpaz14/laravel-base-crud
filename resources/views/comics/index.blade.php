@@ -16,6 +16,7 @@
                 <th scope="col">Tipo di fumetto</th>
                 <th scope="col">Prezzo</th>
                 <th scope="col">Info</th>
+                <th scope="col">Nuovo Fumetto</th>
               </tr>
             </thead>
             <tbody>
@@ -28,6 +29,9 @@
                         <td>{{$comic['price']}}$</td>
                         <td>
                             <a class="btn btn-success" href="{{route('comics.show', $comic->id)}}">Visualizza Info</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-primary" href="{{route('comics.create', $comic->id)}}">Aggiungi nuovo Fumetto</a>
                         </td>
                     </tr>
                 @endforeach
