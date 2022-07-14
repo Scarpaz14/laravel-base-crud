@@ -25,7 +25,7 @@
             </div>
             <div class="mb-4">
                 <label class="fw-bold" for="price">Prezzo:</label>
-                <input type="text" class="form-control" id="price" name="price">
+                <input type="text" class="form-control" id="price" name="price" placeholder="Max: 99.99$">
             </div>
             <div class="mb-4">
                 <label class="fw-bold" for="series">Serie:</label>
@@ -33,7 +33,7 @@
             </div>
             <div class="mb-4">
                 <label class="fw-bold" for="sale_date">Periodo di sconto:</label>
-                <input type="text" class="form-control" id="sale_date" name="sale_date">
+                <input type="text" class="form-control" id="sale_date" name="sale_date" placeholder="Example:2019-04-10">
             </div>
             <div class="mb-4">
                 <label class="fw-bold" for="type">Tipo di serie:</label>
