@@ -5,7 +5,6 @@
 @endsection
 
 @section('page-content')
-    <div class="container">
         <h1>Tutti i fumetti:</h1>
         <table class="table table-striped">
             <thead>
@@ -16,7 +15,7 @@
                 <th scope="col">Tipo di fumetto</th>
                 <th scope="col">Prezzo</th>
                 <th scope="col">Info</th>
-                <th scope="col">Nuovo Fumetto</th>
+                <th scope="col">Piu' Opzioni</th>
               </tr>
             </thead>
             <tbody>
@@ -31,7 +30,6 @@
                             <a class="btn btn-success" href="{{route('comics.show', $comic->id)}}">Visualizza Info</a>
                         </td>
                         <td>
-                            <a class="btn btn-primary" href="{{route('comics.create', $comic->id)}}">Aggiungi nuovo Fumetto</a>
                             <a class="btn btn-primary" href="{{route('comics.edit', $comic->id)}}">Modifica Fumetto</a>
                             <form action="{{route('comics.destroy', $comic->id)}}" method="POST"> 
                                 @csrf

@@ -8,8 +8,9 @@
     <link rel="stylesheet" href={{asset('css/app.css')}}>
 </head>
 <body>
-
-    @yield('page-content')
-    
+    <div class="container">
+        @include('partials.header')
+        @yield('page-content')
+    </div>
 </body>
 </html>
