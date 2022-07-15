@@ -7,7 +7,7 @@
 @section('page-content')
     <div class="container my-3">
         <a class="btn btn-success" href="{{route('comics.index', $comic->id)}}">Torna alla Home</a>
-        <h1>Info dei fumetti:</h1>
+        <h1>Info del fumetto:</h1>
         <table class="table table-striped">
             <thead>
               <tr>

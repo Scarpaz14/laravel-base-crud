@@ -32,6 +32,7 @@
                         </td>
                         <td>
                             <a class="btn btn-primary" href="{{route('comics.create', $comic->id)}}">Aggiungi nuovo Fumetto</a>
+                            <a class="btn btn-primary" href="{{route('comics.edit', $comic->id)}}">Modifica Fumetto</a>
                         </td>
                     </tr>
                 @endforeach
