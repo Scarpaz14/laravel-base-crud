@@ -18,7 +18,7 @@
             </div>
             <div class="mb-4">
                 <label class="fw-bold" for="description">Descrizione:</label>
-                <input type="textarea" class="form-control" required id="description" name="description" value="{{$comic['description']}}">
+                <textarea type="text" class="form-control" required id="description" name="description" value="{{$comic['description']}}"></textarea>
             </div>
             <div class="mb-4">
                 <label class="fw-bold" for="thumb">Immagine:</label>
@@ -39,8 +39,7 @@
             <div class="mb-4">
                 <label class="fw-bold" for="type">Tipo di serie:</label>
                 <select class="form-select" name="type" id="type">
-                    <option selected>Scegli una opzione</option>
-                    <option value="comic book"{{$comic->type == 'comic book' ? 'selected' : ''}}>comic book</option>
+                    <option selected value="comic book"{{$comic->type == 'comic book' ? 'selected' : ''}}>comic book</option>
                     <option value="graphic novel" {{$comic->type == 'graphic novel' ? 'selected' : ''}}>graphic novel</option>
                 </select>
             </div>

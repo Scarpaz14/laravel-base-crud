@@ -30,7 +30,7 @@
                             <a class="btn btn-success" href="{{route('comics.show', $comic->id)}}">Visualizza Info</a>
                         </td>
                         <td>
-                            <a class="btn btn-primary" href="{{route('comics.edit', $comic->id)}}">Modifica Fumetto</a>
+                            <a class="btn btn-primary mb-2" href="{{route('comics.edit', $comic->id)}}">Modifica Fumetto</a>
                             <form action="{{route('comics.destroy', $comic->id)}}" method="POST"> 
                                 @csrf
                                 @method('DELETE')

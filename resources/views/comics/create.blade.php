@@ -17,7 +17,7 @@
             </div>
             <div class="mb-4">
                 <label class="fw-bold" for="description">Descrizione:</label>
-                <input type="text" class="form-control" required id="description" name="description">
+                <textarea type="text" class="form-control" required id="description" name="description"></textarea>
             </div>
             <div class="mb-4">
                 <label class="fw-bold" for="thumb">Immagine:</label>
